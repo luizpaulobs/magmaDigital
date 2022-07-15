@@ -5,34 +5,34 @@
 				<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
 					<li class="nav-item">
 						<a class="nav-link align-middle px-0">
-						    <hand-outline-icon class="me-2"></hand-outline-icon> <span class="ms-1 d-none d-sm-inline">Declaração de trabalho</span>
+						    <hand-outline-icon class="me-2 iconcor"></hand-outline-icon> <small class="ms-1 d-none d-sm-inline">Declaração de trabalho</small>
 						</a>
 					</li>
 
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <light-bulb-outline-icon class="me-2"></light-bulb-outline-icon> <span class="ms-1 d-none d-sm-inline">Pré-projetos</span>
+						    <light-bulb-outline-icon class="me-2 iconcor"></light-bulb-outline-icon> <small class="ms-1 d-none d-sm-inline">Pré-projetos</small>
 						</a>
 					</li>
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <collection-outline-icon class="me-2"></collection-outline-icon> <span class="ms-1 d-none d-sm-inline">Projetos</span>
+						    <collection-outline-icon class="me-2 iconcor"></collection-outline-icon> <small class="ms-1 d-none d-sm-inline">Projetos</small>
 						</a>
 					</li>
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <briefcase-outline-icon class="me-2"></briefcase-outline-icon> <span class="ms-1 d-none d-sm-inline">Portifólios</span>
+						    <briefcase-outline-icon class="me-2 iconcor"></briefcase-outline-icon> <small class="ms-1 d-none d-sm-inline">Portifólios</small>
 						</a>
 					</li>
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <document-text-outline-icon class="me-2"></document-text-outline-icon> <span class="ms-1 d-none d-sm-inline">Controle de demandas</span>
+						    <document-text-outline-icon class="me-2 iconcor"></document-text-outline-icon> <small class="ms-1 d-none d-sm-inline">Controle de demandas</small>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="col py-3 bg-light">
+		<div class="col py-3" style="background-color: #EFEFEF;">
             <div class="mainheader">
                 <p >Controle de demandas</p>
 
@@ -53,7 +53,10 @@
 
                 <button class="btn me-4 demanda">+ Nova Demanda</button>
             </div>
-			<router-outlet></router-outlet>
+			
+			<div class="p-4">
+				<app-card></app-card>
+			</div>
 		</div>
 	</div>
 </div>

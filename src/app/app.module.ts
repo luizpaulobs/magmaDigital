@@ -8,6 +8,7 @@ import { HeaderComponent } from './componentes/layout/header/header.component';
 import { SidebarComponent } from './componentes/layout/sidebar/sidebar.component';
 import {menu, HeroIconModule} from 'ng-heroicon';
 import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
+import { CardComponent } from './componentes/card/card.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
