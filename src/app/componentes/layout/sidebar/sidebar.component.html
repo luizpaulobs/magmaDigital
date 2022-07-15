@@ -5,35 +5,55 @@
 				<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
 					<li class="nav-item">
 						<a class="nav-link align-middle px-0">
-						    <i class="ri-hand-coin-line corsideicon me-2"></i> <span class="ms-1 d-none d-sm-inline">Declaração de trabalho</span>
+						    <hand-outline-icon class="me-2"></hand-outline-icon> <span class="ms-1 d-none d-sm-inline">Declaração de trabalho</span>
 						</a>
 					</li>
-                    
+
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <i class="ri-lightbulb-line corsideicon me-2"></i> <span class="ms-1 d-none d-sm-inline">Pré-projetos</span>
-						</a>
-					</li>
-					<li>
-						<a class="nav-link px-0 align-middle">
-						    <i class="ri-archive-drawer-line corsideicon me-2"></i> <span class="ms-1 d-none d-sm-inline">Projetos</span>
+						    <light-bulb-outline-icon class="me-2"></light-bulb-outline-icon> <span class="ms-1 d-none d-sm-inline">Pré-projetos</span>
 						</a>
 					</li>
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <i class="ri-briefcase-line corsideicon me-2"></i> <span class="ms-1 d-none d-sm-inline">Portifólios</span>
+						    <collection-outline-icon class="me-2"></collection-outline-icon> <span class="ms-1 d-none d-sm-inline">Projetos</span>
 						</a>
 					</li>
 					<li>
 						<a class="nav-link px-0 align-middle">
-						    <i class="ri-file-text-line corsideicon me-2"></i> <span class="ms-1 d-none d-sm-inline">Controle de demandas</span>
+						    <briefcase-outline-icon class="me-2"></briefcase-outline-icon> <span class="ms-1 d-none d-sm-inline">Portifólios</span>
+						</a>
+					</li>
+					<li>
+						<a class="nav-link px-0 align-middle">
+						    <document-text-outline-icon class="me-2"></document-text-outline-icon> <span class="ms-1 d-none d-sm-inline">Controle de demandas</span>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="col py-3 bg-light">
-			<p>Ola pessoal</p>
+            <div class="mainheader">
+                <p >Controle de demandas</p>
+
+                <div class="input-group mb-3 w-25 pesquisar mx-auto">
+                    <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button class="btn btn-outline-secondary" style="background-color: #FFA750;">
+                    <view-grid-outline-icon></view-grid-outline-icon>
+                </button>
+                <button class="btn btn-outline-secondary me-1">
+                    <view-list-outline-icon></view-list-outline-icon>
+                </button>
+
+                <button class="btn btn btn-outline-secondary filtro">
+                    <filter-outline-icon></filter-outline-icon>
+                </button>
+
+                <button class="btn me-4 demanda">+ Nova Demanda</button>
+            </div>
+			<router-outlet></router-outlet>
 		</div>
 	</div>
 </div>

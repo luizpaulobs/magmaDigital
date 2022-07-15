@@ -5,33 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './componentes/layout/layout.component';
 import { HeaderComponent } from './componentes/layout/header/header.component';
-// import {
-//   RiAncientGateFill,
-//   RiHome2Fill,
-//   RiAlignJustify,
-//   RemixIconModule,
-//   RiNotification2Line,
-//   RiUserLine,
-//   RiLightbulbLine,
-//   RiBriefcaseLine,
-//   RiFileTextLine,
-//   RiArchiveDrawerLine,
-//   RiHandCoinLine
-// } from 'angular-remix-icon';
 import { SidebarComponent } from './componentes/layout/sidebar/sidebar.component';
+import {menu, HeroIconModule} from 'ng-heroicon';
+import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 
-// const icons = {
-//   RiAncientGateFill,
-//   RiHome2Fill,
-//   RiAlignJustify,
-//   RiUserLine,
-//   RiNotification2Line,
-//   RiLightbulbLine,
-//   RiBriefcaseLine,
-//   RiFileTextLine,
-//   RiArchiveDrawerLine,
-//   RiHandCoinLine
-// };
 
 @NgModule({
   declarations: [
@@ -43,7 +20,13 @@ import { SidebarComponent } from './componentes/layout/sidebar/sidebar.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //RemixIconModule.configure(icons),
+    NgHeroiconsModule,
+    HeroIconModule.forRoot({
+      menu
+  }, {
+      defaultHostDisplay: 'inlineBlock', // default 'none'
+      attachDefaultDimensionsIfNoneFound: true // default 'false'
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]
